@@ -31,6 +31,17 @@ public class Program2 {
         int id = sc.nextInt();
         departmentDao.deleteById(id);
         System.out.println("Department deleted");
+
+
+        System.out.println("\n*** TEST 4: find a department by Id ***");
+        System.out.println("Insert the department's Id to search");
+        id = sc.nextInt();
+        department = departmentDao.findById(id);
+        System.out.println(department);
+
+
+
+
     }
 
 }
